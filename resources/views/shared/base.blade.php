@@ -21,7 +21,7 @@
                 ckfinder: {
                     uploadUrl: '/js/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files&responseType=json'
                 },
-                /*toolbar: [ 'ckfinder', 'imageUpload', '|', 'heading', '|', 'bold', 'italic', '|', 'undo', 'redo' ]*/
+                toolbar: [ 'heading', '|', 'ckfinder', 'imageUpload', 'imageStyle:full', 'imageStyle:side', 'imageTextAlternative', '|', 'bold', 'italic', '|', 'undo', 'redo', '|', 'numberedList', 'bulletedList', 'blockQuote', '|', 'link', '|', 'insertTable', '|', 'mediaEmbed', '|', 'indent', 'outdent' ]
             })
             .catch( error => {
                 console.error( error );

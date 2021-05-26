@@ -13,6 +13,6 @@ class EditorController extends Controller
 
     public function store(Request $request)
     {
-        var_dump($_POST);
+        var_dump($request->all());
     }
 }
