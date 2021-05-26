@@ -15,6 +15,10 @@
     <script src="/js/bootstrap.min.js"></script>
     <script src="/js/ckeditor.js"></script>
     <script src="/js/ckfinder/ckfinder.js"></script>
+    <style>
+    /*.ck-editor__editable {min-height: 300px;}*/
+    .ck-editor__editable {max-height: 300px;}
+    </style>
     <script>
         ClassicEditor
             .create( document.querySelector( '#editor' ) , {
@@ -22,6 +26,9 @@
                     uploadUrl: '/js/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files&responseType=json'
                 },
                 toolbar: [ 'heading', '|', 'ckfinder', 'imageUpload', 'imageStyle:full', 'imageStyle:side', 'imageTextAlternative', '|', 'bold', 'italic', '|', 'undo', 'redo', '|', 'numberedList', 'bulletedList', 'blockQuote', '|', 'link', '|', 'insertTable', '|', 'mediaEmbed', '|', 'indent', 'outdent' ]
+            })
+            .then( editor => {
+                //  editor.ui.view.editable.element.style.height = '150px';
             })
             .catch( error => {
                 console.error( error );
