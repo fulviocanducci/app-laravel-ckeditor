@@ -8,3 +8,4 @@ Route::get('/', function () {
 });
 
 Route::get('/editor', [EditorController::class, "index"]);
+Route::post('/editor/store', [EditorController::class, "store"])->name('editor.store');

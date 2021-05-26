@@ -10,4 +10,9 @@ class EditorController extends Controller
     {
         return view('editor.index');
     }
+
+    public function store(Request $request)
+    {
+        var_dump($_POST);
+    }
 }
